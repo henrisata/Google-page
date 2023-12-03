@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav div {
+            padding: 6px;
+        }
+
+        .profile-photo {
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .pontinhos {
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .nav-img:hover {
+            background-color: #515151;
+            border-radius: 50%;
+        }
+
+        input {
+            all: unset;
+            color: white;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+        .search-bar:hover {
+            background-color: #303134;
+            border: 1px solid #202124 !important;
+            box-shadow: -1px 1px 14px -7px rgba(0, 0, 0, 0.68);
+        }
+
+        .buttons .btn-sorte {
+            background-color: #303134;
+            border: 1px solid #303134;
+            border-radius: 4px;
+            color: #e8eaed;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .buttons .btn-pesquisa {
+            background-color: #303134;
+            border: 1px solid #303134;
+            border-radius: 4px;
+            color: #e8eaed;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .btn-sorte:hover {
+            border: 1px solid #5f6368 !important;
+        }
+
+        .btn-pesquisa:hover {
+            border: 1px solid #5f6368 !important;
+        }
+
+        .brasil {
+            padding: 15px 30px;
+            border-bottom: 1px solid #3c4043;
+            font-size: 15px;
+            color: #9aa0a6;
+        }
+
+        .link-footer:hover {
+            text-decoration: underline !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="
+    background-color: #202124;
+    height: 100vh; 
+    max-height: 100vh; 
+    color: white;
+    font-family: arial,sans-serif;">
+
+    <nav style="display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 10px;
+                ">
+        <div class="nav-link"><a href="https://mail.google.com/mail/u/0/"
+                style="text-decoration: none; color: white;">Gmail</a></div>
+        <div class="nav-link"><a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl"
+                style="text-decoration: none;color: white;">Imagens</a></div>
+        <div class="nav-img" style="width: 24px; height: 24px;">
+            <svg style="width: 24px; height: 24px;" class="pontinhos" f ocusable="false" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                </path>
+            </svg>
+        </div>
+        <div class="nav-img" style="width: 32px; height: 32px;">
+            <img style="width: 32px; height: 32px;" class=" profile-photo" src="assets/profile.webp" alt="">
+        </div>
+    </nav>
+    <div style="
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-top: 150px;
+                ">
+        <div>
+            <img width="272px" height="92" src="assets/googlelogo.png" alt="googlelogo">
+        </div>
+        <!-- serch bar-->
+        <div class="search-bar"
+            style="display: flex; border: 1px solid #5f6368; border-radius: 40px; width: 582px; height: 44; padding: 10px; margin: 30px; margin-top: 20px;">
+            <svg style="width: 24px;" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+            </svg>
+            <div style="width: 100%;">
+                <input type="text" style="width: 100%; margin-bottom: 5px;" value="asdlaksdasd">
+            </div>
+            <div style="display: flex;flex-direction: row; justify-content: center; align-items: center; gap: 5px;">
+                <img src="assets/tecladinho.png" alt="tecladinho" style="width: 22px;height: 12px;">
+                <img class="Gdd5U" style="width: 24px; padding-right: 8px; padding-left: 8px;"
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlN0YW5kYXJkX3Byb2R1Y3RfaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE5MnB4IiBoZWlnaHQ9IjE
+                    5MnB4IiB2aWV3Qm94PSIwIDAgMTkyIDE5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTkyIDE5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxyZWN0IGlkPSJib3VuZGluZ19ib3hfMV8iIGZpbGw9Im5vbmUiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIi8+CjxnIGlkPSJhcnRfbGF5ZXIiPgoJPGNpcmNsZSBpZD0iRG90IiBmaWxsPSIjNDI4NUY0IiBjeD0iOTYiIGN5PSIxMDQuMTUiIHI9IjI4Ii8+Cgk8cGF0aCBpZD0iUmVkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTYwLDcydjQwLjE1VjEzNmMwLDEuNjktMC4zNCwzLjI5LTAuODIsNC44MnYwdjBjLTEuNTcsNC45Mi01LjQzLDguNzgtMTAuMzUsMTAuMzVoMHYwCgkJYy0xLjUzLDAuNDktMy4xMywwLjgyLTQuODIsMC44Mkg2NmwxNiwxNmg1MGgxMmM0LjQyLDAsOC42My0wLjksMTIuNDYtMi41MWMzLjgzLTEuNjIsNy4yOC0zLjk2LDEwLjE3LTYuODYKCQljMS40NS0xLjQ1LDIuNzYtMy4wMywzLjkxLTQuNzRjMi4zLTMuNCwzLjk2LTcuMjgsNC44MS0xMS40NGMwLjQzLTIuMDgsMC42NS00LjI0LDAuNjUtNi40NXYtMTJWOTYuMTVWODRsLTYtMTlsLTEwLjgyLDIuMTgKCQlDMTU5LjY2LDY4LjcxLDE2MCw3MC4zMSwxNjAsNzJ6Ii8+Cgk8cGF0aCBpZD0iQmx1ZSIgZmlsbD0iIzQyODVGNCIgZD0iTTMyLDcyYzAtMS42OSwwLjM0LTMuMjksMC44Mi00LjgyYzEuNTctNC45Miw1LjQzLTguNzgsMTAuMzUtMTAuMzVDNDQuNzEsNTYuMzQsNDYuMzEsNTYsNDgsNTYKCQloOTZjMS42OSwwLDMuMjksMC4zNCw0LjgyLDAuODJjMCwwLDAsMCwwLDBMMTQ5LDQ1bC0xNy01bC0xNi0xNmgtMTMuNDRIOTZoLTYuNTZINzZMNjAsNDBINDhjLTE3LjY3LDAtMzIsMTQuMzMtMzIsMzJ2MTJ2MjBsMTYsMTYKCQlWNzJ6Ii8+Cgk8cGF0aCBpZD0iR3JlZW4iIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xNDQsNDBoLTEybDE2LjgzLDE2LjgzYzEuMjMsMC4zOSwyLjM5LDAuOTMsMy40NywxLjU5YzIuMTYsMS4zMiwzLjk3LDMuMTMsNS4yOSw1LjI5CgkJYzAuNjYsMS4wOCwxLjIsMi4yNCwxLjU5LDMuNDd2MEwxNzYsODRWNzJDMTc2LDU0LjMzLDE2MS42Nyw0MCwxNDQsNDB6Ii8+Cgk8cGF0aCBpZD0iWWVsbG93IiBmaWxsPSIjRkJCQzA0IiBkPSJNNDgsMTY4aDM5Ljg5bC0xNi0xNkg0OGMtOC44MiwwLTE2LTcuMTgtMTYtMTZ2LTIzLjg5bC0xNi0xNlYxMzZDMTYsMTUzLjY3LDMwLjMzLDE2OCw0OCwxNjh6CgkJIi8+CjwvZz4KPC9zdmc+Cg=="
+                    alt="Pesquisa com a câmera" data-atf="1" data-frt="0">
+            </div>
+        </div>
+        <!--buttons-->
+        <div class="buttons" style="
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            ">
+            <button class="btn-pesquisa">Pesquisa Google</button>
+            <a href="https://www.google.com/doodles">
+                <button class="btn-sorte">Estou com Sorte</button>
+            </a>
+        </div>
+        <footer style="position:absolute; 
+        bottom: 0; 
+        background-color: #171717;
+        left: 0px;
+        right: 0px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        color: #bdc1c6;">
+            <div class="brasil"
+                style="padding-left: 30px;  padding-right: 30px;padding-top: 15px;padding-bottom: 15px;">Brasil</div>
+            <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            ">
+                <div style="
+                display: flex;
+                width: 1036px;
+                height: 47;
+                ">
+                    <a class="link-footer"
+                        href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                        style=" text-decoration: none; color: #888B90;padding: 15px">Sobre</a>
+                    <a class="link-footer"
+                        href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                        style="text-decoration: none; color: #888B90;padding: 15px">Publicidade</a>
+                    <a class="link-footer"
+                        href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=BR#!/"
+                        style="text-decoration: none; color: #888B90;padding: 15px">Negócios</a>
+                    <a class="link-footer" href="https://www.google.com/search/howsearchworks/?fg=1"
+                        style="text-decoration: none; color: #888B90;padding: 15px">Como Funciona a Pesquisa</a>
+                </div>
+                <div style="
+                display:flex;
+                flex-direction: row;
+                padding-right:20px;
+                padding-left:20px;
+                color: #888B90;
+                ">
+                    <a class="link-footer" href="https://policies.google.com/privacy?hl=pt-BR&fg=1"
+                        style="text-decoration: none; color: #888B90;padding: 15px">Privacidade</a>
+                    <a class="link-footer" href="https://policies.google.com/terms?hl=pt-BR&fg=1"
+                        style="text-decoration: none; color: #888B90;padding: 15px">Termos</a>
+                    <a class="link-footer" href=""
+                        style="text-decoration: none; color: #888B90;padding: 15px">Configurações</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
